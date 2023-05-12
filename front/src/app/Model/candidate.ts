@@ -1,5 +1,5 @@
-export class Candidate {
-    id:number,
+export interface Candidate {
+    id?:number,
     name:string,
     age:number,
     email:string,

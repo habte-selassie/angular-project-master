@@ -14,25 +14,27 @@ import { CandidatesService } from 'src/app/Services/candidates.service';
 })
 export class AddCandidateComponent {
 
-candidate = new Candidate;
+candidate:Candidate = {name:'', age:0, email:'',skills:''}
 
-constructor(private service:CandidatesService ,private http :HttpClient ){}
+constructor(private service:CandidatesService ,private http :HttpClient ,private router:Router ){}
 
 
-
-  postEmployee(name, Dep, age, sal) {
-    if (name.invalid || Dep.invalid || age.invalid || sal.invalid) {
-      alert('Please Enter valid data');
-      window.location.reload();
-    }
-    else {
-      this.serv.postv(this.emp).subscribe(data => {
-        this.rout.navigateByUrl('lEmployee')
-      })
-    }
+postCandidate(name:any,age:any,email:any,skills:any){
+  if(name.invalid || age.invalid || email.invalid || skills.invalid) {
+    alert('Please Enter Valid Data')
+    window.location.reload()
   }
-
-  ngOnInit(): void {
+  else {
+    const newCandidate: Candidate = {
+      name:name.value,
+      age:age.value,
+      email:email.value,
+      skills:skills.value
+    }
+    this.service.createCandidate(newCandidate).subscribe(()=>{
+      this.router.navigateByUrl('list-candidate')
+    })
   }
+}
 
 }

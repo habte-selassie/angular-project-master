@@ -33,7 +33,7 @@ export class CandidatesService {
 
   updateCandidate(candidateId:number,candidate:Candidate):Observable<Candidate>{
     const url = `${this.apiUrl}/${candidateId}`
-    return this.http.put<Candidate>(url,Candidate)
+    return this.http.put<Candidate>(url,candidate)
   }
 
   deleteCandidate(candidateId:number):Observable<Candidate>{
