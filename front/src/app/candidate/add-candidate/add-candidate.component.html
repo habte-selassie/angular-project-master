@@ -1,0 +1,23 @@
+<p>add-candidate works!</p>
+<h1 class="text-center">Add Employees</h1>
+<div class="container col-md-6 ">
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text"  #name='ngModel'  required maxlength="25" minlength="3" [(ngModel)]="emp.name" class="form-control" placeholder="Name">
+                <h6 *ngIf="name.invalid&&name.touched">Please Enter valid Name</h6>
+                <label for="">Department</label>
+                <input type="text" #Dep='ngModel'  [(ngModel)]="emp.Department" class="form-control" placeholder="Department">
+                <h6 *ngIf="Dep.invalid&&Dep.touched">Please Enter valid Department</h6>
+                <label for="">Age</label>
+                <input type="number" #age='ngModel'  required maxlength="3" minlength="2" [(ngModel)]="emp.age" class="form-control" placeholder="Age">
+                <h6 *ngIf="age.invalid&&age.touched">Please Enter valid age</h6>
+                <label for="">Salary</label>
+                <input type="number"#sal='ngModel'  required maxlength="3" minlength="4" [(ngModel)]="emp.Salary" class="form-control" placeholder="Salary">
+                <h6 *ngIf="sal.invalid&&sal.touched">Please Enter valid Salary</h6>
+                <button (click)="postEmployee(name,Dep,age,sal)" class="btn my-3 btn-block">Send Data</button>
+            </div>
+        </div>
+    </div>
+</div>

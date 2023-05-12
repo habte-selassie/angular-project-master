@@ -1,0 +1,92 @@
+<!-- <p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navc navbar-light">
+    <a class="navbar-brand" href="#">Hr System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Departments</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Employees
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="aEmployee">Add Employees</a>
+                    <a class="dropdown-item" routerLink="lEmployee">List Employees</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Manager
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="aManager">Add Manager</a>
+                    <a class="dropdown-item" routerLink="lManager">List Manager</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+ -->
+
+  
+  <!-- <router-outlet>    </router-outlet>  -->
+
+     <mat-card>
+      <mat-card-content class="small-table">   
+             <h1>HRMS System</h1>
+      </mat-card-content>
+    </mat-card>
+    <div class="image1-card">
+      <img mat-card-sm-image class="image1" src="../assets/images1-removebg-preview.png" alt="hr">
+    </div>
+<div>
+   <mat-card id="a">
+      <mat-card-header>
+        <mat-card-title></mat-card-title>
+        <mat-card-subtitle>Start</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+</div>
+
+<mat-card id="b">
+    <mat-card-header class="half-width">Human Resource Managment System Admin DashBoard</mat-card-header>
+       </mat-card> 
+    
+
+ <mat-card class="big-table"> 
+          <mat-card-content> 
+          <nav class="navigation">
+               <a routerLink="/home" id="home" class="box-link">
+                  <mat-icon class="link-icon">home</mat-icon>
+                  DashBoard
+               </a>
+               <a routerLink="/add-employee" id="add-employee"  class="box-link">
+                  <mat-icon class="link-icon">person_add</mat-icon>
+                  Add Employee
+               </a>
+               <a routerLink="/list-employee"  id="list-employee" class="box-link">
+                  <mat-icon class="link-icon">group</mat-icon>
+                  Employee List
+               </a>
+               <a routerLink="/logout"  id="logout" class="box-link">
+                  <mat-icon class="link-icon">exit_to_app</mat-icon>
+                  Logout
+               </a>
+            </nav>  
+           
+             
+           
+         </mat-card-content> 
+       </mat-card> 
+     
+    

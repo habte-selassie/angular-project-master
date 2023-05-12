@@ -1,0 +1,207 @@
+body{
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -140px;
+}
+#a{
+    width: 75%;
+    margin-left: 323px;
+    background-color: #a5c531;
+    height: 90px;
+    margin-top: -90px;
+}
+#b{
+    width: 75%;
+    margin-left: 323px;
+    background-color: #4c1c74;
+    height: 68px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn-holder-card{
+    width: 75%;
+    margin-left: 323px;
+    height: 600px;
+    margin-top: 20px;
+    background-color: #b9b3b3;
+}
+
+section {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+  }
+  
+  .example-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    margin-left: 9px;
+    margin-top: 10px;
+    /* min-width: 120px; */
+  }
+  
+  .example-button-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example-button-row button{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    width: 300px;
+    height: 42px;
+    font-size: 20px;
+    margin-left: 10px; 
+    margin-top: 21px;
+    padding-top: 9px;
+  }
+
+  .big-table{
+    width: 280px;
+    height: 800px;
+    color: #43c5c5;
+    background-color: #1e1e1f;
+    /* margin-left: 10px; */
+    margin-top: -50.65em;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .navigation a {
+    font-size: 21px;
+    color: initial;
+    text-decoration: none;
+    gap: 10px;
+    padding: 15px;
+    margin-left: 86px;
+    position: relative;
+    color: #8c29ce;
+    margin-left: 50px;
+    text-align: start;
+  }
+  
+  .navigation a:hover {
+    color: #29c495; /* Change to the desired color on hover */
+   
+  }
+  
+  .navigation a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0066ff; /* Change to the desired border color on hover */
+  }
+  
+  a.box-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68%;
+  height: 20px;
+  padding: 10px;
+  /* border: 1px solid #e25050; */
+  border-radius: 4px;
+  text-decoration: none;
+  color: #db6c6c;
+  background-color: #1e1e1f;
+  margin-bottom: 10px;
+  margin-left: 20px
+  }
+  
+  a.box-link:hover {
+    background-color: #2d2d3b;
+  }
+  
+
+
+
+.small-table{
+    width: 250px;
+    height: 60px;
+    color: #43c5c5;
+    background-color: #bd5f12;
+    margin-top: 1px;
+}
+
+h1{
+    font-size: 23px;
+    padding-top: 20px;
+    font-weight:900;
+    color: #ffffff;
+    margin-left: 129px;
+    margin-top: -18px;
+}
+
+.image1-card {
+    width: 8%;
+    margin-left: 18px;
+    margin-top: -92px;
+    height: 93px;
+   
+}
+
+.image1 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #bd5f12;
+}
+
+h2{
+    margin-left: 30px;
+    color: #ffffff;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+#home {
+    margin-left: 90px;
+}
+
+#list-candidate  {
+margin-left: 115px;
+}
+
+#add-candidate  {
+    margin-left: 115px;
+}
+
+#list-employee {
+    margin-left: 110px;
+}
+#add-employee {
+    margin-left: 110px;
+}
+
+#logout{
+    margin-left: 29px;
+}
+.image-card {
+    width: 50%;
+    margin-left: 360px;
+    margin-top: -180px;
+    height: 360px;
+}
+
+.image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

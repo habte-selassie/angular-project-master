@@ -1,0 +1,104 @@
+
+
+<div>
+     
+  <mat-card id="b">
+    <mat-card-header class="half-width">All Candidates List</mat-card-header>
+       </mat-card>
+       
+       <hr/>
+       <!-- ['position', 'name', 'age' , 'email', 'departement', 'designation', 'skills' , 'experience' , 'salary' , 'contact' , 'address']; -->
+  
+       <mat-table [dataSource]="dataSource">
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <mat-header-cell *matHeaderCellDef>Position</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.position}}</mat-cell>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.name}}</mat-cell>
+        </ng-container>
+      
+        <!-- Age Column -->
+        <ng-container matColumnDef="age">
+          <mat-header-cell *matHeaderCellDef>Age</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.age}}</mat-cell>
+        </ng-container>
+      
+        <!-- Email Column -->
+        <ng-container matColumnDef="email">
+          <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.email}}</mat-cell>
+        </ng-container>
+      
+        <!-- Department Column -->
+        <ng-container matColumnDef="department">
+          <mat-header-cell *matHeaderCellDef>Department</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.department}}</mat-cell>
+        </ng-container>
+      
+        <!-- Designation Column -->
+        <ng-container matColumnDef="designation">
+          <mat-header-cell *matHeaderCellDef>Designation</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.designation}}</mat-cell>
+        </ng-container>
+      
+        <!-- Skills Column -->
+        <ng-container matColumnDef="skills">
+          <mat-header-cell *matHeaderCellDef>Skills</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.skills}}</mat-cell>
+        </ng-container>
+      
+        <!-- Experience Column -->
+        <ng-container matColumnDef="experience">
+          <mat-header-cell *matHeaderCellDef>Experience</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.experience}}</mat-cell>
+        </ng-container>
+      
+        <!-- Salary Column -->
+        <ng-container matColumnDef="salary">
+          <mat-header-cell *matHeaderCellDef>Salary</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.salary}}</mat-cell>
+        </ng-container>
+      
+        <!-- Contact Column -->
+        <ng-container matColumnDef="contact">
+          <mat-header-cell *matHeaderCellDef>Contact</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.contact}}</mat-cell>
+        </ng-container>
+      
+        <!-- Address Column -->
+        <ng-container matColumnDef="address">
+          <mat-header-cell *matHeaderCellDef>Address</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.address}}</mat-cell>
+        </ng-container>
+      
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+          <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+          <mat-cell *matCellDef="let row">
+            <button mat-icon-button color="primary" >
+              <mat-icon>edit</mat-icon>
+            </button>
+            
+            <button mat-icon-button color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+      
+        <!-- Table Rows -->
+       
+      
+      
+        <!-- Table Rows -->
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+      
+  
+  
+      </div>
