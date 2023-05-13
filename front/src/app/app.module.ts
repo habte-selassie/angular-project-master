@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -24,7 +25,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddCandidateComponent } from './candidate/add-candidate/add-candidate.component';
 import { ReadCandidateComponent } from './candidate/read-candidate/read-candidate.component';
 import { UpdateCandidateComponent } from './candidate/update-candidate/update-candidate.component';
-
+import {MatDialogModule} from '@angular/material/dialog'
 
 
 const routes:Routes = [
@@ -66,7 +67,9 @@ const routes:Routes = [
     MatCardModule,
     MatTableModule,
     // MatCardImage
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatDialogModule
     
   ],
   exports:[

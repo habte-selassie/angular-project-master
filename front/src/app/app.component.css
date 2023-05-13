@@ -136,23 +136,25 @@ section {
     width: 250px;
     height: 60px;
     color: #43c5c5;
-    background-color: #bd5f12;
+    background-color: #ca9999;
     margin-top: 1px;
+    border-color: #29c495;
 }
 
 h1{
-    font-size: 23px;
+    font-size: 26px;
     padding-top: 20px;
     font-weight:900;
-    color: #ffffff;
-    margin-left: 129px;
-    margin-top: -18px;
+    color: #776d6d;
+    margin-left: 89px;
+    margin-top: -6px;
+    width: 100%;
 }
 
 .image1-card {
     width: 8%;
-    margin-left: 18px;
-    margin-top: -92px;
+    margin-left: 0px;
+    margin-top: -93px;
     height: 93px;
    
 }
