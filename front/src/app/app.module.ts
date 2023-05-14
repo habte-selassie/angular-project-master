@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { LogoutComponent } from './components/logout/logout.component';
-import { AddEmployeeComponent } from './Employees/add-employee/add-employee.component';
-import { ReadEmployeeComponent } from './Employees/read-employee/read-employee.component';
+// import { AddEmployeeComponent } from './Employees/add-employee/add-employee.component';
+// import { ReadEmployeeComponent } from './Employees/read-employee/read-employee.component';
 import { UpdateEmployeeComponent } from './Employees/update-employee/update-employee.component';
 import { DeleteEmployeeComponent } from './Employees/delete-employee/delete-employee.component';
 import { MatButtonModule } from '@angular/material/button'
@@ -25,13 +25,23 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddCandidateComponent } from './candidate/add-candidate/add-candidate.component';
 import { ReadCandidateComponent } from './candidate/read-candidate/read-candidate.component';
 import { UpdateCandidateComponent } from './candidate/update-candidate/update-candidate.component';
-import {MatDialogModule} from '@angular/material/dialog'
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatTableDataSource  } from '@angular/material/table';
+import { EmpComponent } from './Emp/emp.component'
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+
+
+
 
 
 const routes:Routes = [
   {path:'home',component:AppComponent},
-  {path:'add-employee',component:AddEmployeeComponent},
-  {path:'list-employee',component:ReadEmployeeComponent},
+  {path:'homes',component:EmpComponent},
+  // {path:'add-employee',component:AddEmployeeComponent},
+  // {path:'list-employee',component:ReadEmployeeComponent},
   {path:'logout',component:LogoutComponent},
  
 ]
@@ -43,8 +53,8 @@ const routes:Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
-    AddEmployeeComponent,
-    ReadEmployeeComponent,
+    // AddEmployeeComponent,
+    // ReadEmployeeComponent,
     UpdateEmployeeComponent,
     DeleteEmployeeComponent,
     LogoutComponent,
@@ -52,6 +62,7 @@ const routes:Routes = [
     AddCandidateComponent,
     ReadCandidateComponent,
     UpdateCandidateComponent,
+    EmpComponent
   
    
   ],
@@ -69,7 +80,11 @@ const routes:Routes = [
     // MatCardImage
     ReactiveFormsModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    MatPaginatorModule,
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatSelectModule
     
   ],
   exports:[

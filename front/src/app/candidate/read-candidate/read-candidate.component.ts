@@ -19,6 +19,22 @@ export class ReadCandidateComponent {
 
   displayedColumns: string[] = ['position', 'name', 'age', 'email', 'department', 'designation', 'skills', 'experience', 'salary', 'contact', 'address', 'actions'];
 
+
+  // displayedColumns: = [
+  //      position=1,
+  //      firstname = 'a'
+  //      age=21
+  //     'email',
+  //     'department', 
+  //     'designation', 
+  //     'skills',
+  //     'experience',
+  //     'salary',
+  //     'contact',
+  //     'address',
+  //     'actions'];
+
+
   ////// call this function to update the data in the table 
     updateDataSource():void {
       this.dataSource = new MatTableDataSource<Candidate>(this.candidates)

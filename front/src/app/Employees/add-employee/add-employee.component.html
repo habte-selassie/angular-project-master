@@ -1,63 +1,18 @@
+<mat-toolbar class="container" color="primary">
+  <mat-toolbar-row>
+    <span>Welcome to HR Management - {{title}}</span>
+    <span class="toolbar-spacer"></span>
+    <span>Logout</span>
+    <a [routerLink]="[ '/logout']"><mat-icon class="logout-icon">logout</mat-icon></a>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 <div>
-   
-      <form class="example-form">
-         <mat-form-field appearance="outline" id="firstname">
-             <mat-label>First Name</mat-label>
-             <!-- <input matInput placeholder="Enter First Name" [formControl]="email" required> -->
-             <input matInput placeholder="pat@example.com" required>
-             <mat-error *ngIf=""></mat-error>
-         </mat-form-field>
- 
-         <mat-form-field appearance="outline" id="lastname">
-           <mat-label>Last Name</mat-label>
-           <input matInput placeholder="Enter Last Name" required>
-         </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="age">
-           <mat-label>Age</mat-label>
-           <input matInput type="number" placeholder="Enter Age" required>
-         </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="email">
-           <mat-label>Email</mat-label>
-           <input matInput type="email" placeholder="Enter Email" required>
-         </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="department">
-           <mat-label>Department</mat-label>
-           <input matInput placeholder="Enter Department" required>
-         </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="designation">
-           <mat-label>Designation</mat-label>
-           <input matInput placeholder="Enter Designation" required>
-         </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="skills">
-           <mat-label>Skills</mat-label>
-           <input matInput placeholder="Enter Skills" required>
-         </mat-form-field>
- 
-         <mat-form-field appearance="outline" id="salary">
-             <mat-label>Salary</mat-label>
-             <input matInput placeholder="Enter Salary" required>
-           </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="contact">
-           <mat-label>Contact</mat-label>
-           <input matInput type="tel" placeholder="Enter Contact" required>
-         </mat-form-field>
-       
-         <mat-form-field appearance="outline" id="address">
-           <mat-label>Address</mat-label>
-           <input matInput type="text" placeholder="Enter Address" required>
-         </mat-form-field>
-       
-         <button type="submit" mat-raised-button color="primary" id="btn-submit">Submit</button>
-         
-       </form>
-       
- </div>
- 
- 
+  <button mat-fab matTooltip="Return Dashboard" [routerLink]="['/dashboard']">
+    <mat-icon>arrow_left</mat-icon>
+  </button>
+
+  <button mat-fab matTooltip="Add Employee" (click)="showForm(1)">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
