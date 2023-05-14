@@ -46,16 +46,27 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { Candidate } from 'src/app/Model/candidate';
 import { CandidatesService } from 'src/app/Services/candidates.service';
-
+import { FormBuilder } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-add-candidate',
   templateUrl: './add-candidate.component.html',
   styleUrls: ['./add-candidate.component.css']
 })
 export class AddCandidateComponent {
+  candidateForm : FormGroup
   candidate: Candidate = { firstname: '', lastname: '', name: '', age: 0, email: '', skills: '' };
 
-  constructor(private service: CandidatesService, private http: HttpClient, private router: Router) { }
+  constructor(private service: CandidatesService,
+     private http: HttpClient,
+     private formBuilder:FormBuilder,
+      private router: Router) {
+
+        this.candidateForm = this.formBuilder.group({
+          age:[null],
+          email:[null]
+        })
+       }
 
   postCandidate(): void {
     if (this.validateForm()) {
