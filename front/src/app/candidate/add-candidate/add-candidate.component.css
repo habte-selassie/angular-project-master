@@ -17,7 +17,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin-left: 200px;
+    max-width: 300px;
+    margin-top: 30px;
     
   }
   #firstname {
@@ -91,6 +93,36 @@ body{
    height:50px ;
    width: 150px;
    margin-top: 15px;
-  }
+  } 
 
-  
+  /* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+#firstname,
+#lastname,
+#age,
+#email,
+#department,
+#designation,
+#skills,
+#salary,
+#contact,
+#address {
+  width: 100%;
+}
+
+#btn-submit {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 150px;
+} */
