@@ -1,4 +1,4 @@
-<!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   <ng-container matColumnDef="id">
     <th mat-header-cell class="centered-cell" *matHeaderCellDef> Id </th>
@@ -34,7 +34,7 @@
 
   <ng-container matColumnDef="edit">
     <th mat-header-cell class="centered-cell" *matHeaderCellDef> Edit </th>
-    <td mat-cell class="centered-cell" *matCellDef="let row"> <button md-raised-button (click)="editEmployee(row)">
+    <!-- <td mat-cell class="centered-cell" *matCellDef="let row"> <button md-raised-button (click)="editEmployee(row)">
         <mat-icon>edit</mat-icon>
       </button> </td>
   </ng-container>
@@ -43,11 +43,11 @@
     <th mat-header-cell *matHeaderCellDef> Delete </th>
     <td mat-cell *matCellDef="let row"> <button md-raised-button (click)="deleteEmployee(row)">
         <mat-icon>delete</mat-icon>
-      </button> </td>
+      </button> </td> -->
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<mat-paginator #paginator [pageSize]="2" [pageSizeOptions]="[2, 4, 6]"></mat-paginator> -->
+<mat-paginator #paginator [pageSize]="2" [pageSizeOptions]="[2, 4, 6]"></mat-paginator>

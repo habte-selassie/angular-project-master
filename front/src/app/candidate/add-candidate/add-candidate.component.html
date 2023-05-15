@@ -1,12 +1,11 @@
-<!-- 
+
 
 <div>
    
     <form class="example-form">
        <mat-form-field appearance="outline" id="firstname">
            <mat-label>First Name</mat-label>
-         <input matInput placeholder="Enter First Name" [formControl]="email" required> 
-           <input matInput placeholder="pat@example.com" required>
+         <input matInput placeholder="Enter First Name"  required> 
            <mat-error *ngIf=""></mat-error>
        </mat-form-field>
 
@@ -60,59 +59,3 @@
      </form>
      
 </div> -->
-<div>
-  <form class="example-form" #candidateForm="ngForm">
-    <!-- <mat-form-field appearance="outline" id="firstname">
-      <mat-label>First Name</mat-label>
-      <input matInput placeholder="Enter First Name" [(ngModel)]="candidate['firstname']" required>
-      <mat-error *ngIf="candidateForm.controls['firstname'].invalid">Invalid First Name</mat-error>
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" id="lastname">
-      <mat-label>Last Name</mat-label>
-      <input matInput placeholder="Enter Last Name" [(ngModel)]="candidate['lastname']" required>
-      <mat-error *ngIf="candidateForm.controls['lastname'].invalid">Invalid Last Name</mat-error>
-    </mat-form-field> -->
-    <mat-form-field appearance="outline" id="age">
-      <mat-label>Age</mat-label>
-      <input matInput type="number" placeholder="Enter Age" [(ngModel)]="candidate['age']" required>
-      <mat-error *ngIf="candidateForm.controls['age'].invalid">Invalid Age</mat-error>
-    </mat-form-field>
-    
-    <mat-form-field appearance="outline" id="email">
-      <mat-label>Email</mat-label>
-      <input matInput type="email" placeholder="Enter Email" [(ngModel)]="candidate['email']" required>
-      <mat-error *ngIf="candidateForm.controls['email'].invalid">Invalid Email</mat-error>
-    </mat-form-field>
-    
-    <!-- <mat-form-field appearance="outline" id="department">
-      <mat-label>Department</mat-label>
-      <input matInput placeholder="Enter Department" [(ngModel)]="candidate['department']" required>
-      <mat-error *ngIf="candidateForm.controls['department'].invalid">Invalid Department</mat-error>
-    </mat-form-field>
-    
-    <mat-form-field appearance="outline" id="designation">
-      <mat-label>Designation</mat-label>
-      <input matInput placeholder="Enter Designation" [(ngModel)]="candidate['designation']" required>
-      <mat-error *ngIf="candidateForm.controls['designation'].invalid">Invalid Designation</mat-error>
-    </mat-form-field> -->
-    
-    <mat-form-field appearance="outline" id="skills">
-      <mat-label>Skills</mat-label>
-      <input matInput placeholder="Enter Skills" [(ngModel)]="candidate['skills']" required>
-      <mat-error *ngIf="candidateForm.controls['skills'].invalid">Invalid Skills</mat-error>
-    </mat-form-field>
-    
-    <!-- <mat-form-field appearance="outline" id="experience">
-      <mat-label>Experience</mat-label>
-      <input matInput placeholder="Enter Experience" [(ngModel)]="candidate['experience']" required>
-      <mat-error *ngIf="candidateForm.controls['experience'].invalid">Invalid Experience</mat-error>
-    </mat-form-field> -->
-    
-    <!-- Add more form fields as needed -->
-    
-    <!-- Other form fields -->
-
-    <button (click)="postCandidate()" type="submit" mat-raised-button color="primary" id="btn-submit">Submit</button>
-  </form>
-</div>

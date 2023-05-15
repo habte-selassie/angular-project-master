@@ -1,36 +1,31 @@
-// import { Component } from '@angular/core';
-// import { MatTableDataSource } from '@angular/material/table';
-
-// @Component({
-//   selector: 'app-read-employee',
-//   templateUrl: './read-employee.component.html',
-//   styleUrls: ['./read-employee.component.css']
-// })
-// export class ReadEmployeeComponent {
-//   displayedColumns: string[] = ['position', 'name', 'age', 'email', 'department', 'designation', 'skills', 'experience', 'salary', 'contact', 'address','actions'];
-
-// //   dataSource: any[] = [
-// //     { position: 1, name: 'John Doe', age: 30, email: 'johndoe@example.com', department: 'IT', designation: 'Software Engineer', skills: 'Angular, TypeScript', experience: '5 years', salary: '$100,000', contact: '123-456-7890', address: '123 ABC Street' },
-// //     // Add more data objects as needed
-// //   ]
-
-
-//  }
-//  import { Component, OnInit, ViewChild } from '@angular/core';
-//  import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-//  import { EmployeeService } from 'src/app/core/employee.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
+ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+ import { EmployeeService } from 'src/app/core/employee.service';
 //  import { Employee } from './employee.interface';
 //  import { MatTableDataSource, MatPaginator } from '@angular/material';
 //  import { ProjectService } from 'src/app/core/project.service';
 //  import { map } from 'rxjs/operators';
 //  import { Project } from '../project/project.interface';
+@Component({
+  selector: 'app-read-employee',
+  templateUrl: './read-employee.component.html',
+  styleUrls: ['./read-employee.component.css']
+})
+export class ReadEmployeeComponent  {
+
+  displayedColumns: string[] = ['position', 'name', 'age', 'email', 'department', 'designation', 'skills', 'experience', 'salary', 'contact', 'address','actions'];
+
+  dataSource: any[] = [
+    { position: 1, name: 'John Doe', age: 30, email: 'johndoe@example.com', department: 'IT', designation: 'Software Engineer', skills: 'Angular, TypeScript', experience: '5 years', salary: '$100,000', contact: '123-456-7890', address: '123 ABC Street' },
+    // Add more data objects as needed
+  ]
+
+
  
-//  @Component({
-//    selector: 'app-employee',
-//    templateUrl: './employee.component.html',
-//    styleUrls: ['./employee.component.css']
-//  })
-//  export class EmployeeComponent implements OnInit {
+ 
+ 
+
+
  
 //    displayedColumns: string[] = ['id', 'name', 'age', 'birthday', 'favoriteColor', 'projectId', 'edit', 'delete'];
 //    dataSource = new MatTableDataSource<Employee>([]);
@@ -161,5 +156,5 @@
  
  
  
-//  }
+ }
  

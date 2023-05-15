@@ -1,32 +1,25 @@
-// import { Component } from '@angular/core';
-// import {FormControl} from '@angular/forms'
-// import { Validators } from '@angular/forms';
-
-// @Component({
-//   selector: 'app-add-employee',
-//   templateUrl: './add-employee.component.html',
-//   styleUrls: ['./add-employee.component.css']
-// })
-// export class AddEmployeeComponent {
-
-  
-// }
-// import { Component, OnInit, ViewChild } from '@angular/core';
-// import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-// import { EmployeeService } from 'src/app/core/employee.service';
+import {FormControl} from '@angular/forms'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { EmployeeService } from 'src/app/core/employee.service';
 // import { Employee } from './employee.interface';
 // import { MatTableDataSource, MatPaginator } from '@angular/material';
 // import { ProjectService } from 'src/app/core/project.service';
 // import { map } from 'rxjs/operators';
 // import { Project } from '../project/project.interface';
 
-// @Component({
-//   selector: 'app-employee',
-//   templateUrl: './employee.component.html',
-//   styleUrls: ['./employee.component.css']
-// })
-// export class EmployeeComponent implements OnInit {
+@Component({
+  selector: 'app-add-employee',
+  templateUrl: './add-employee.component.html',
+  styleUrls: ['./add-employee.component.css']
+})
 
+export class AddEmployeeComponent implements OnInit {
+
+  
+    ngOnInit(): void {
+        
+    }
 //   displayedColumns: string[] = ['id', 'name', 'age', 'birthday', 'favoriteColor', 'projectId', 'edit', 'delete'];
 //   dataSource = new MatTableDataSource<Employee>([]);
 //   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -156,4 +149,4 @@
 
 
 
-// }
+}
