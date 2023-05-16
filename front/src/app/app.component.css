@@ -65,71 +65,7 @@ section {
     padding-top: 9px;
   }
 
-  .big-table{
-    width: 280px;
-    height: 800px;
-    color: #43c5c5;
-    background-color: #1e1e1f;
-    /* margin-left: 10px; */
-    margin-top: -5.65em;
-}
-
-.navigation {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-  }
   
-  .navigation a {
-    font-size: 21px;
-    color: initial;
-    text-decoration: none;
-    gap: 10px;
-    padding: 15px;
-    margin-left: 86px;
-    position: relative;
-    color: #8c29ce;
-    margin-left: 50px;
-    text-align: start;
-  }
-  
-  .navigation a:hover {
-    color: #29c495; /* Change to the desired color on hover */
-   
-  }
-  
-  .navigation a:hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #0066ff; /* Change to the desired border color on hover */
-  }
-  
-  a.box-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 68%;
-  height: 20px;
-  padding: 10px;
-  /* border: 1px solid #e25050; */
-  border-radius: 4px;
-  text-decoration: none;
-  color: #db6c6c;
-  background-color: #1e1e1f;
-  margin-bottom: 10px;
-  margin-left: 20px
-  }
-  
-  a.box-link:hover {
-    background-color: #2d2d3b;
-  }
-  
-
 
 
 .small-table{
@@ -173,28 +109,7 @@ h2{
     padding-top: 5px;
 }
 
-#home {
-    margin-left: 90px;
-}
 
-#list-candidate  {
-margin-left: 115px;
-}
-
-#add-candidate  {
-    margin-left: 115px;
-}
-
-#list-employee {
-    margin-left: 110px;
-}
-#add-employee {
-    margin-left: 110px;
-}
-
-#logout{
-    margin-left: 29px;
-}
 .image-card {
     width: 50%;
     margin-left: 360px;
@@ -206,4 +121,73 @@ margin-left: 115px;
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.nav-item:hover,
+.nav-item.active {
+  background-color: #38bba9; /* New background color on hover and click */
+}
+
+.nav-item:hover .mat-icon,
+.nav-item.active .mat-icon {
+  color: rgb(139, 204, 19); /* New icon color on hover and click */
+}
+
+.nav-item:hover span,
+.nav-item.active span {
+  color: rgb(66, 130, 204); /* New text color on hover and click */
+}
+
+span{
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  margin-left: -15px;
+}
+
+.mat-nav-list  {
+  margin-top: 30px; /* Vertical gap between navigation items */
+}
+
+
+.mat-icon{
+font-size: 30px;
+color: blueviolet;
+margin-left: 20px;
+width:60px;
+height: 23px;
+
+}
+
+.mat-icon span{
+  font-size: 30px;
+color: blueviolet;
+}
+
+#a{
+margin-top: 15px;
+}
+
+#b{
+  margin-top: 15px;
+}
+
+#c{
+  margin-top: 15px;
+}
+
+#d{
+  margin-top: 15px;
+}
+
+#e{
+  margin-top: 15px;
+}
+
+#f{
+  margin-top: 15px;
+}
+#h{
+  margin-top: 15px;
 }

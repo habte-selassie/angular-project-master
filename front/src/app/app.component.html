@@ -1,4 +1,4 @@
-<!-- <router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet>-->
 
       <mat-card>
       <mat-card-content class="small-table">   
@@ -22,6 +22,8 @@
    <mat-card-header class="half-width">Human Resource Managment System Admin DashBoard</mat-card-header>
       </mat-card>  
       
+
+
       <!-- <mat-card class="btn-holder-card">
          <mat-card-content>
             <section>
@@ -36,8 +38,8 @@
                <img mat-card-sm-image class="image" src="../assets/hr.jpg" alt="hr">
              </mat-card>
          </mat-card-content>
-       </mat-card>
-   -->
+       </mat-card> -->
+   
    
 
    <!-- <router-outlet></router-outlet>
@@ -76,9 +78,47 @@
          </mat-card-content> 
        </mat-card> 
  -->
+ <mat-drawer-container class="example-container" style="height: 800px; width: 320px;" >
+   <mat-drawer mode="side" opened style="height: 800px; width: 320px; background-color: #242425;">
+     <mat-nav-list>
+       <a id="a" class="nav-item" mat-list-item routerLink="/home">
+         <mat-icon>home</mat-icon>
+         <span>Home</span>
+       </a>
+       <a id="b" class="nav-item" mat-list-item routerLink="/add-candidate">
+         <mat-icon>group_add</mat-icon>
+         <span>Add Candidate</span>
+       </a>
+       <a id="c" class="nav-item" mat-list-item routerLink="/list-candidate">
+         <mat-icon>list_alt</mat-icon>
+         <span>List Candidate</span>
+       </a>
+       <a id="d" class="nav-item" mat-list-item routerLink="/add-employee">
+         <mat-icon>group_add</mat-icon>
+         <span>Add Employee</span>
+       </a>
+       <a id="e" class="nav-item" mat-list-item routerLink="/list-employee">
+         <mat-icon>list_alt</mat-icon>
+         <span>List Employee</span>
+       </a>
+       <a id="f" class="nav-item" mat-list-item routerLink="/profile">
+         <mat-icon>people_outline</mat-icon>
+         <span>Profile</span>
+       </a>        
+       <a id="h" class="nav-item" mat-list-item routerLink="/logout">
+         <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span> 
+      </a>
+    
 
+     </mat-nav-list>
+   </mat-drawer>
+   <!-- <mat-drawer-content>
+     Main content
+   </mat-drawer-content> -->
+ </mat-drawer-container>
     
 
        
 
-         <app-add-candidate></app-add-candidate>
+         <!-- <app-add-candidate></app-add-candidate> -->

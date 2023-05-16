@@ -1,5 +1,84 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+.nav-item:hover,
+.nav-item.active {
+  background-color: #38bba9; /* New background color on hover and click */
+}
+
+.nav-item:hover .mat-icon,
+.nav-item.active .mat-icon {
+  color: rgb(139, 204, 19); /* New icon color on hover and click */
+}
+
+.nav-item:hover span,
+.nav-item.active span {
+  color: rgb(66, 130, 204); /* New text color on hover and click */
+}
+
+span{
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  margin-left: -15px;
+}
+
+.mat-nav-list  {
+  margin-top: 30px; /* Vertical gap between navigation items */
+}
+
+
+.mat-icon{
+font-size: 30px;
+color: blueviolet;
+margin-left: 20px;
+width:60px;
+height: 23px;
+
+}
+
+.mat-icon span{
+  font-size: 30px;
+color: blueviolet;
+}
+
+#a{
+margin-top: 15px;
+}
+
+#b{
+  margin-top: 15px;
+}
+
+#c{
+  margin-top: 15px;
+}
+
+#d{
+  margin-top: 15px;
+}
+
+#e{
+  margin-top: 15px;
+}
+
+#f{
+  margin-top: 15px;
+}
+#h{
+  margin-top: 15px;
+}
+/* .mat-list-item:hover {
+  background-color: #d8eb2c; /* New background color on hover
+}
+
+.mat-list-item:hover .mat-icon {
+  color: #f00; /* New icon color on hove
+}
+
+.mat-list-item:hover span {
+  color: #f00; /* New text color on hover 
+} */
+
+
 /* body{
   align-items: center;
 }
@@ -126,7 +205,7 @@
   width: 100%;
   max-width: 150px;
 } */
-.sidenav-container {
+/* .sidenav-container {
   height: 100%;
 }
 
@@ -152,4 +231,4 @@ mat-icon {
 
 .example-sidenav {
   padding: 20px;
-}
+} */
