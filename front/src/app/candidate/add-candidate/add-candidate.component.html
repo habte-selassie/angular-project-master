@@ -1,4 +1,4 @@
-
+<!-- 
 
 <div style="max-width: 400px;">
    
@@ -58,4 +58,100 @@
        
      </form>
      
-</div> -->
+</div>  -->
+
+<!-- <mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer> -->
+  <!-- <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div> -->
+
+
+  <!-- <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened style="background-color: rgb(47, 45, 49);">Drawer content</mat-drawer>
+    <mat-drawer-content>Main content</mat-drawer-content>
+  </mat-drawer-container>
+   -->
+   <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened style="background-color: rgb(47, 45, 49);">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/home">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </a>
+        <a mat-list-item routerLink="/add-candidate">
+          <mat-icon>group_add</mat-icon>
+          <span>Add Candidate</span>
+        </a>
+        <a mat-list-item routerLink="/list-candidate">
+          <mat-icon>list_alt</mat-icon>
+          <span>List Candidate</span>
+        </a>
+        <a mat-list-item routerLink="/add-employee">
+          <mat-icon>group_add</mat-icon>
+          <span>Add Employee</span>
+        </a>
+        <a mat-list-item routerLink="/list-employee">
+          <mat-icon>list_alt</mat-icon>
+          <span>List Employee</span>
+        </a>
+        <a mat-list-item routerLink="/profile">
+          <mat-icon>pepole</mat-icon>
+          <span>Profile</span>
+        </a>
+        <a routerLink="/logout"  id="logout" class="box-link">
+          <mat-icon class="link-icon">exit_to_app</mat-icon>
+          Logout
+       </a>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      Main content
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
+
+
+<!-- </mat-drawer-container> -->
+
+<!-- <mat-drawer-container class="sidenav-container" style="background-color: aqua;">
+  <mat-drawer  mode="side" opened>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </a>
+      <a mat-list-item routerLink="/logout">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </a>
+      <a mat-list-item routerLink="/add-candidate">
+        <mat-icon>group_add</mat-icon>
+        <span>Add Candidate</span>
+      </a>
+      <a mat-list-item routerLink="/list-candidate">
+        <mat-icon>list_alt</mat-icon>
+        <span>List Candidate</span>
+      </a>
+      <a mat-list-item routerLink="/add-employee">
+        <mat-icon>group_add</mat-icon>
+        <span>Add Employee</span>
+      </a>
+      <a mat-list-item routerLink="/list-employee">
+        <mat-icon>list_alt</mat-icon>
+        <span>List Employee</span>
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container> -->

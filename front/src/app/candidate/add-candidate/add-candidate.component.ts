@@ -54,6 +54,7 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./add-candidate.component.css']
 })
 export class AddCandidateComponent {
+  showFiller = false;
   candidateForm : FormGroup
   candidate: Candidate = { firstname: '', lastname: '', name: '', age: 0, email: '', skills: '' };
 
