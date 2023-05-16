@@ -1,3 +1,5 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
 body{
     align-items: center;
 }
@@ -69,7 +71,7 @@ section {
 
 
 .small-table{
-    width: 250px;
+    width: 269px;
     height: 60px;
     color: #43c5c5;
     background-color: #ca9999;
@@ -123,7 +125,19 @@ h2{
     width: 100%;
 }
 
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+.example-container {
+  height: 800px;
+  width: 300px;
+  background-color: #242425;
+  margin-top: -86px;
+}
+
+.mat-drawer {
+  height: 800px;
+  width: 300px;
+  background-color: #242425;
+}
+
 
 .nav-item:hover,
 .nav-item.active {
@@ -165,11 +179,11 @@ height: 23px;
 color: blueviolet;
 }
 
-#a{
+#a1{
 margin-top: 15px;
 }
 
-#b{
+#b1{
   margin-top: 15px;
 }
 

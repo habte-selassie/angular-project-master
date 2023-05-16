@@ -1,12 +1,12 @@
 <!-- <router-outlet></router-outlet>-->
 
-      <mat-card>
+      <!-- <mat-card>
       <mat-card-content class="small-table">   
              <h1>HRMS System</h1>
       </mat-card-content>
     </mat-card>
     <div class="image1-card">
-      <img mat-card-sm-image class="image1" src="../assets/Untitled1.png" alt="hr">
+      <img mat-card-sm-image class="image1" src="../assets/hrimg.png" alt="hr">
     </div> 
 
 <div>
@@ -20,7 +20,7 @@
 
 <mat-card id="b">
    <mat-card-header class="half-width">Human Resource Managment System Admin DashBoard</mat-card-header>
-      </mat-card>  
+      </mat-card>   -->
       
 
 
@@ -42,50 +42,18 @@
    
    
 
-   <!-- <router-outlet></router-outlet>
+    <!-- <router-outlet></router-outlet>
 
- <mat-card class="big-table"> 
-          <mat-card-content> 
-          <nav class="navigation">
-               <a routerLink="/home" id="home" class="box-link">
-                  <mat-icon class="link-icon">home</mat-icon>
-                  DashBoard
-               </a>
-               <a routerLink="/add-employee" id="add-employee"  class="box-link">
-                  <mat-icon class="link-icon">person_add</mat-icon>
-                  Add Employee
-               </a>
-               <a routerLink="/list-employee"  id="list-employee" class="box-link">
-                  <mat-icon class="link-icon">group</mat-icon>
-                  Employee List
-               </a>
-                 <a routerLink="/add-candidate" id="add-candidate"  class="box-link">
-                  <mat-icon class="link-icon">person_add</mat-icon>
-                  Add Candidate
-               </a>
-               <a routerLink="/list-candidate"  id="list-candidate" class="box-link">
-                  <mat-icon class="link-icon">group</mat-icon>
-                  Candidate List
-               </a>
-               <a routerLink="/logout"  id="logout" class="box-link">
-                  <mat-icon class="link-icon">exit_to_app</mat-icon>
-                  Logout
-               </a>
-            </nav>   
-           
-             
-           
-         </mat-card-content> 
-       </mat-card> 
- -->
- <mat-drawer-container class="example-container" style="height: 800px; width: 280px;" >
-   <mat-drawer mode="side" opened style="height: 800px; width: 280px; background-color: #242425;">
+ 
+         
+ <mat-drawer-container class="example-container">
+   <mat-drawer mode="side" opened>
      <mat-nav-list>
-       <a id="a" class="nav-item" mat-list-item routerLink="/home">
+       <a id="a1" class="nav-item" mat-list-item routerLink="/home">
          <mat-icon>home</mat-icon>
          <span>Home</span>
        </a>
-       <a id="b" class="nav-item" mat-list-item routerLink="/add-candidate">
+       <a id="b1" class="nav-item" mat-list-item routerLink="/add-candidate">
          <mat-icon>group_add</mat-icon>
          <span>Add Candidate</span>
        </a>
@@ -113,12 +81,12 @@
 
      </mat-nav-list>
    </mat-drawer>
-   <!-- <mat-drawer-content>
+   <mat-drawer-content>
      Main content
-   </mat-drawer-content> -->
+   </mat-drawer-content> 
  </mat-drawer-container>
-    
+     -->
 
        
 
-         <!-- <app-add-candidate></app-add-candidate> -->
+         <app-add-candidate></app-add-candidate>
