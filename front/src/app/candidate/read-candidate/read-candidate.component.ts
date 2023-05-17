@@ -17,7 +17,7 @@ export class ReadCandidateComponent {
 
 
 
-  displayedColumns: string[] = ['position', 'name', 'age', 'email', 'department', 'designation', 'skills', 'experience', 'salary', 'contact', 'address', 'actions'];
+  displayedColumns: string[] = ['no', 'name', 'email', 'department', 'company', 'skills', 'experience', 'salary', 'contact', 'address', 'actions'];
 
 
   // displayedColumns: = [

@@ -1,11 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
- import { FormBuilder, FormGroup, Validators } from '@angular/forms';
- import { EmployeeService } from 'src/app/core/employee.service';
-//  import { Employee } from './employee.interface';
-//  import { MatTableDataSource, MatPaginator } from '@angular/material';
-//  import { ProjectService } from 'src/app/core/project.service';
-//  import { map } from 'rxjs/operators';
-//  import { Project } from '../project/project.interface';
+import { MatTableDataSource } from '@angular/material/table';
+import { Candidate } from 'src/app/Model/candidate';
+ 
+
 @Component({
   selector: 'app-read-employee',
   templateUrl: './read-employee.component.html',
@@ -13,148 +10,101 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class ReadEmployeeComponent  {
 
-  displayedColumns: string[] = ['position', 'name', 'age', 'email', 'department', 'designation', 'skills', 'experience', 'salary', 'contact', 'address','actions'];
+  dataSource: MatTableDataSource<Candidate> = new MatTableDataSource<Candidate>()
 
-  dataSource: any[] = [
-    { position: 1, name: 'John Doe', age: 30, email: 'johndoe@example.com', department: 'IT', designation: 'Software Engineer', skills: 'Angular, TypeScript', experience: '5 years', salary: '$100,000', contact: '123-456-7890', address: '123 ABC Street' },
-    // Add more data objects as needed
-  ]
-
-
- 
- 
- 
+  candidates: Candidate[] = []; /// assuming you have an array to store the form values
+  
+  selectedCandidate : Candidate | null = null; ///// variable to get the selected candidate 
 
 
- 
-//    displayedColumns: string[] = ['id', 'name', 'age', 'birthday', 'favoriteColor', 'projectId', 'edit', 'delete'];
-//    dataSource = new MatTableDataSource<Employee>([]);
-//    @ViewChild(MatPaginator) paginator: MatPaginator;
- 
-//    form: FormGroup;
-//    showFormValue = false;
-//    nameButton = 'SAVE';
-//    option = 1;
-//    title = 'Employee';
- 
-//    projectList: Project[] = [];
- 
-//    constructor(private fb: FormBuilder, private service: EmployeeService, private serviceProject: ProjectService) {
- 
-//      this.form = this.fb.group({
-//        id: '',
-//        name: ['', Validators.required],
-//        age: ['', Validators.required],
-//        birthday: ['', Validators.required],
-//        favoriteColor: ['', Validators.required],
-//        projectId: ''
-//      });
- 
-//      this.getEmployees();
-//      this.getSelectProject();
-//    }
- 
-//    ngOnInit() { }
- 
- 
-//    getSelectProject() {
-//      this.serviceProject.getProjects().subscribe( (data) => {
-//        this.projectList = data;
-//      });
-//    }
- 
-//    getEmployees() {
-//      this.service.getEmployees().subscribe((data: Employee[]) => {
-//        this.dataSource = new MatTableDataSource(data);
-//        this.dataSource.paginator = this.paginator;
-//      });
-//    }
- 
-//    onSubmit() {
- 
-//      if (this.nameButton === 'SAVE') {
-//        this.option = 1;
-//      } else {
-//        this.option = 2;
-//      }
- 
-//      const employee: Employee = {
-//        name: this.form.get('name').value,
-//        age: this.form.get('age').value,
-//        birthday: this.form.get('birthday').value,
-//        favoriteColor: this.form.get('favoriteColor').value,
-//        projectId: this.form.get('projectId').value
-//      };
- 
-//      switch (this.option) {
-//        case 1:
-//          this.service.addEmployee(employee).subscribe((data: Employee[]) => {
-//            this.dataSource = new MatTableDataSource(data);
-//            this.dataSource.paginator = this.paginator;
-//            this.projectList[this.form.get('projectId').value].teamSize++;
-//            this.serviceProject.
-//              editProject(this.form.get('projectId').value, 
-//                          this.projectList[this.form.get('projectId').value]).subscribe( console.log );
-//          });
-//          break;
-//        case 2:
-//          employee['id'] = this.form.get('id').value;
-//          this.service.editEmployee(this.form.controls.id.value, employee).subscribe((data) => {
-//            this.dataSource = new MatTableDataSource(data);
-//            this.dataSource.paginator = this.paginator;
-//          });
-//          break;
- 
-//        default:
-//          break;
-//      }
-//    }
- 
-//    editEmployee(row) {
- 
-//      this.showForm(2);
- 
-//      this.form.patchValue({
-//        id: row.id,
-//        name: row.name,
-//        age: row.age,
-//        birthday: row.birthday,
-//        favoriteColor: row.favoriteColor,
-//        projectId: row.projectId
-//      });
-//    }
- 
-//    showForm(option: number) {
- 
-//      this.form.patchValue({
-//        id: '',
-//        name: '',
-//        age: '',
-//        birthday: '',
-//        favoriteColor: '',
-//        projectId: ''
-//      });
- 
-//      switch (option) {
-//        case 1: this.nameButton = 'SAVE';
-//          break;
- 
-//        case 2: this.nameButton = 'EDIT';
-//          break;
-//        default: this.nameButton = 'SAVE';
-//          break;
-//      }
-//      this.showFormValue = !this.showFormValue;
-//    }
- 
-//    deleteEmployee(row) {
-//      this.service.deleteEmployee(row).subscribe((data) => {
-//        this.dataSource = new MatTableDataSource(data);
-//        this.dataSource.paginator = this.paginator;
-//      });
-//    }
+
+  displayedColumns: string[] = ['no', 'name', 'email', 'department', 'company', 'skills', 'experience', 'salary', 'contact', 'address', 'actions'];
+
+
+  // displayedColumns: = [
+  //      position=1,
+  //      firstname = 'a'
+  //      age=21
+  //     'email',
+  //     'department', 
+  //     'designation', 
+  //     'skills',
+  //     'experience',
+  //     'salary',
+  //     'contact',
+  //     'address',
+  //     'actions'];
+
+
+  ////// call this function to update the data in the table 
+    updateDataSource():void {
+      this.dataSource = new MatTableDataSource<Candidate>(this.candidates)
+  }
+
+  ///////// function to handle the form submission 
+
+  onSubmit(form:any):void {
+    if(this.selectedCandidate){
+      /////////// update the properites of the selected candidate with the new insert input value of the form 
+
+     this.selectedCandidate.firstname = form.value.firstname  
+     this.selectedCandidate.lastname = form.value.lastname; 
  
  
+ ///// to reset the selected candidate 
+     this.selectedCandidate = null
+    } else {
+     //////// create new candidate object with the form values and add it to the candidate object
+     const newCandidate:Candidate = {
+         firstname: form.value.firstname,
+         lastname: form.value.lastname,
+         name:form.value.name,
+         age:form.value.age,
+         skills:form.value.skills,
+         email:form.value.email
+         ///// other properties 
+     }
  
+    
+     /// add the submiited form data in to the candidates array 
+   this.candidates.push(newCandidate)
+ 
+    }
+   
+    ////////// reset the form 
+    form.reset()
+    this.updateDataSource()
+ 
+   }
+
+
+ //////// function to handle editing the candidate 
+ editCandidate(candidate:Candidate):void {
+  /////////// set the selected candidate to the one clicked for editing 
+  this.selectedCandidate = candidate 
+
+  //////////// populate the form fields with the selected candidate value 
+ //////////// Assuming you have a form variable defined in your template, you can set its values like this:
+ if(this.selectedCandidate) {
+ this.selectedCandidate = {
+    firstname: candidate.firstname,
+    lastname: candidate.lastname,
+    name:candidate.name,
+    age:candidate.age,
+    skills:candidate.skills,
+    email:candidate.email
+    //   // Set other form fields accordingly
+     }
+
+  }
+
  }
- 
+
+
+  //// function to delete a candidate 
+  deleteCandidate(index:number):void {
+    this.candidates.splice(index,1)
+    ////// update the data source to reflect the changes made during deleting the candidates 
+    this.updateDataSource()
+  }
+}

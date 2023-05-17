@@ -1,6 +1,6 @@
 
 
-<div>
+<div id="box" >
      
     <mat-card id="b">
       <mat-card-header class="half-width">All Candidates List</mat-card-header>
@@ -11,21 +11,15 @@
     
          <mat-table [dataSource]="dataSource">
           <!-- Position Column -->
-          <ng-container matColumnDef="position">
-            <mat-header-cell *matHeaderCellDef>Position</mat-header-cell>
-            <mat-cell *matCellDef="let row">{{row.position}}</mat-cell>
+          <ng-container matColumnDef="no">
+            <mat-header-cell *matHeaderCellDef>No</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{row.no}}</mat-cell>
           </ng-container>
         
           <!-- Name Column -->
           <ng-container matColumnDef="name">
             <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
             <mat-cell *matCellDef="let row">{{row.name}}</mat-cell>
-          </ng-container>
-        
-          <!-- Age Column -->
-          <ng-container matColumnDef="age">
-            <mat-header-cell *matHeaderCellDef>Age</mat-header-cell>
-            <mat-cell *matCellDef="let row">{{row.age}}</mat-cell>
           </ng-container>
         
           <!-- Email Column -->
@@ -41,9 +35,9 @@
           </ng-container>
         
           <!-- Designation Column -->
-          <ng-container matColumnDef="designation">
-            <mat-header-cell *matHeaderCellDef>Designation</mat-header-cell>
-            <mat-cell *matCellDef="let row">{{row.designation}}</mat-cell>
+          <ng-container matColumnDef="company">
+            <mat-header-cell *matHeaderCellDef>Company</mat-header-cell>
+            <mat-cell *matCellDef="let row">{{row.company}}</mat-cell>
           </ng-container>
         
           <!-- Skills Column -->
