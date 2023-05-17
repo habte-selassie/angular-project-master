@@ -33,6 +33,7 @@ import { DeleteEmployeeComponent } from './Employees/delete-employee/delete-empl
 
 import { AppRoutingModule } from './app-routing.module';
 import { routes } from './app-routing.module';
+import { ProfileComponent } from '../app/components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,9 @@ import { routes } from './app-routing.module';
     AddCandidateComponent,
     ReadCandidateComponent,
     UpdateCandidateComponent,
-    EmpComponent
+    EmpComponent,
+    ProfileComponent
+    
   ],
   imports: [
     BrowserModule,
