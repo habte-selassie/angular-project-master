@@ -17,7 +17,7 @@ background-color: orangered;
 }
 
 #profile-box {
-    background-color: rgb(182, 182, 190);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 80%;
 }
@@ -42,6 +42,8 @@ button {
     height: 300px;
     margin-top: 100px;
     margin-left: 100px;
+    background-color: rgb(5, 255, 5);
+  
 }
 
 .education {
@@ -50,6 +52,7 @@ button {
     height: 300px;
     margin-top: 150px;
     margin-left: 350px;
+    background-color: yellow;
 }
 
 .experience {
@@ -58,6 +61,7 @@ button {
     height: 300px;
     margin-top: 500px;
     margin-left: 350px;
+    background-color: red;
 }
 
 .skills {
@@ -66,4 +70,5 @@ button {
     height: 900px;
     margin-top: 120px;
     margin-left: 35px;
+    background-color: rgb(197, 197, 209);
 }
