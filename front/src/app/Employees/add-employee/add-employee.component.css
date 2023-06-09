@@ -1,15 +1,271 @@
-table {
-  width: 100%;
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.add-candidate-form {
+ display: flex;
+ justify-content: space-between;
 }
 
-.centered-cell {
-  text-align: center;
+.add-candidate-form label {
+ display: block;
+ margin-top: 20px;
+ width: 280px;
+ height: 30px;
+ 
 }
 
-.logout-icon {
-  padding: 0 14px;
+.add-candidate-form input[type="text"] {
+ width: 240px;
+ height: 30px;
+ border-radius: 6px;
+ border: 1px solid rgb(138, 131, 131);
 }
 
-.toolbar-spacer {
-  flex: 1 1 auto;
+.add-candidate-form {
+ width: 615px;
+ height: 800px;
+ background-color: rgb(214, 201, 226);
+ border-color: aqua;
+ border: 1px solid aqua;
+ margin: auto;
+ border-radius: 16px;
+ margin-top: 10px;
 }
+
+form {
+ margin-left:38px;
+ margin-top: 150px;
+ position: absolute;
+ width: 10px;
+}
+
+body {
+ align-items: center;
+ background-color: black;
+}
+
+.h1 {
+ margin: auto;
+ margin-top: 0px;
+ margin-left: 0px;
+ width: 680px;
+ height: 80px;
+ border: 1px solid rebeccapurple;
+ background-color: black;
+ text-align: center;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ 
+}
+
+h1{
+ position: relative;
+ margin: auto;
+ margin-top: 20px;
+ margin-left: 100px;
+ font-size: 30px;
+ font-weight: 500;
+ text-decoration: wavy;
+ width: 380px;
+ height: 60px;
+ color: rgb(218, 205, 219);
+ background-color: black;
+ text-align: center; 
+
+ 
+} 
+
+
+.btn-primary {
+ width: 260px;
+ height: 50px;
+ border-radius: 9px;
+ color: #61cca8;
+ background-color: rgb(219, 112, 24);
+ margin-top: 60px; 
+ margin-left: 140px;
+ text-align: center;
+ margin-bottom: 60px;
+ font-size: 23px;
+ font-weight: 500;
+}
+
+#a {
+margin-top: -39px; 
+}
+
+#a1 {
+  margin-top: 2px; 
+ }
+
+#b {
+
+}
+
+#c {
+
+}
+
+#d {
+
+}
+
+#e {
+
+}
+
+
+#f {
+ margin-left: 293px;
+ margin-top: -400px;
+}
+
+#f1 {
+margin-left: 293px;
+}
+
+#g {
+ margin-left: 293px;
+}
+
+#g1 {
+ margin-left: 293px;
+}
+
+#h {
+ margin-left: 293px;
+}
+
+#h1 {
+ margin-left: 293px;
+}
+
+#i {
+ margin-left: 293px;
+}
+
+#i1 {
+ margin-left: 293px;
+}
+
+#j {
+ margin-left: 293px;
+} 
+
+
+#j1 {
+ margin-left: 293px;
+}  
+
+/* 
+.form-label {
+ margin-top: 30px;
+ color: aqua;
+
+}
+
+.custom-form-field {
+ width: 300px;
+ height: 50%;
+}
+
+.custom-form-field .mat-form-field-wrapper {
+ height: 100%;
+}
+
+
+
+
+
+.example-form-field {
+   width: 200px;
+ }
+ 
+ :host {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+
+ .example-form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: -235px;
+   max-width: 300px;
+   margin-top: 80px;
+   
+ }
+ #firstname {
+ margin: auto;
+ align-items: center;
+ margin-left: 400px;
+ }
+
+ #lastname {
+ margin: auto;
+ align-items: center;
+ margin-left: 650px;
+ margin-top: -75px;
+ }
+
+ #age {
+   margin: auto;
+   align-items: center;
+   margin-left: 400px;
+ }
+
+ #email {
+   margin: auto;
+   align-items: center;
+   margin-left: 650px;
+   margin-top: -75px;
+ }
+
+ #department {
+   margin: auto;
+   align-items: center;
+   margin-left: 400px;
+ }
+
+ #designation {
+   margin: auto;
+   align-items: center;
+   margin-left: 650px;
+   margin-top: -75px;
+ }
+
+ #skills {
+   margin: auto;
+   align-items: center;
+   margin-left: 400px;
+ }
+
+ #salary {
+   margin: auto;
+   align-items: center;
+   margin-left: 650px;
+   margin-top: -75px;
+ }
+
+ #contact {
+   margin: auto;
+   align-items: center;
+   margin-left: 400px;
+ 
+ }
+
+ #address {
+   margin: auto;
+   align-items: center;
+   margin-left: 650px;
+   margin-top: -75px;
+ }
+
+ #btn-submit {
+  margin-left: 620px;
+  height:50px ;
+  width: 150px;
+  margin-top: 15px;
+ }  
+
+  */

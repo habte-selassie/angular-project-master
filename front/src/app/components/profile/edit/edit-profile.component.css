@@ -1,37 +1,51 @@
+body {
+    background-color: aqua;
+}
 .editer-box {
-   width:90%;
+   width:74%;
    height:1000px;
-   margin-top: 36px;
+   margin-left: 300px;
+   background-color: rgb(255, 255, 255);
+   margin-top: 0px;
+   position: absolute;
+   border: 1px solid rgb(175, 166, 166);
 }
 
 .basic {
-    margin-left: 280px;
+    margin-left: 20px;
     height:200px;
-    margin-top: 30px;
+    margin-top: 40px;
+    background-color: rgb(214, 213, 223);
+    width:95%;
 }
 
-.card-holder {
-    margin-left: 280px;
-    height:200px;
-}
+
 
 .contact {
-    margin-left: 280px;
+    margin-left: 20px;
     height:200px;
+    background-color: rgb(214, 213, 223);
+    width:95%;
 }
 
+
 .education{
-    margin-left: 280px;
+    margin-left: 20px;
     height:200px;
+    background-color: rgb(214, 213, 223);
+    width:95%;
 }
 
 .experience {
-    margin-left: 280px; 
+    margin-left: 20px; 
     height:200px;
+    background-color: rgb(214, 213, 223);
+    width:95%;
+
 }
 
 .first-name {
-    margin-left: -268px; 
+    margin-left: 18px; 
     margin-top: 20px;
 }
 
@@ -89,7 +103,9 @@ border-radius:12px
     align-self: center;
     margin-top:10px;
     width:190px;
-    height:35px;
-    background-color:rgb(183, 226, 26);
-    border-radius:12px
+    height:55px;
+    background-color:rgb(45, 47, 167);
+    margin-left: 390px;
+    border-radius:15px;
+    border-color: white;
 }
