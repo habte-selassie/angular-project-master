@@ -1,14 +1,36 @@
 .editer-box {
-width:100%;
-height:1000px;
+   width:90%;
+   height:1000px;
+}
+
+.basic {
+    margin-left: 280px;
+    height:1000px;
+}
+
+.card-holder {
+    margin-left: 280px;
+    height:1000px;
+}
+
+.contact {
+    margin-left: 280px;
+    height:1000px;
+}
+
+.education{
+    margin-left: 280px;
+    height:1000px;
+}
+
+.experience {
+    margin-left: 280px; 
+    height:1000px;
 }
 
 body{
     background-color: rgb(255, 255, 255);
     align-items:center;
-}
-.a {
-    margin-left: 10px;
 }
 
 input {
