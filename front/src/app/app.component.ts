@@ -9,6 +9,9 @@ export class AppComponent {
 
   constructor(private router:Router){}
 
+  isLinkActive(route: string): boolean {
+    return this.router.isActive(route, true);
+  }
   navigateToHome() {
     this.router.navigateByUrl('/home');
   }

@@ -8,8 +8,9 @@ import { AddEmployeeComponent } from './Employees/add-employee/add-employee.comp
 import { ReadEmployeeComponent } from './Employees/read-employee/read-employee.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/view-profile/profile.component';
+import { HomeComponent } from './home/home.component';
 export const routes: Routes = [
-  { path: 'home', component: AppComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'add-employee', component: AddEmployeeComponent },
   { path: 'list-employee', component: ReadEmployeeComponent },
   { path: 'add-candidate', component: AddCandidateComponent },

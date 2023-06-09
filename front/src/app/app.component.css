@@ -4,6 +4,32 @@ body{
     align-items: center;
 }
 
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f2f2f2;
+  z-index: 999;
+}
+
+/* .navbar-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.small-table {
+  margin-right: 20px;
+}
+
+.content {
+  margin-top: 60px; /* Height of the top navbar 
+} */
+
+
 nav{
     display: flex;
     flex-direction: column;
@@ -71,7 +97,7 @@ section {
 
 
 .small-table{
-    width: 269px;
+    width: 260px;
     height: 60px;
     color: #43c5c5;
     background-color: #ca9999;
@@ -125,13 +151,17 @@ h2{
     width: 100%;
 }
 
+
+
 .example-container {
-  height: 800px;
-  width: 280px;
+  height: 100vh; /* Use the full height of the viewport */
+  width: 288px;
   background-color: #242425;
-  margin-top: -86px;
-  position: fixed;
+  position: fixed; /* Fix the position */
+  top: 99px; /* Position from the top */
+  left: 0; /* Position from the left */
 }
+
 
 .mat-drawer {
   height: 800px;
@@ -206,3 +236,8 @@ margin-top: 15px;
 #h{
   margin-top: 15px;
 }
+
+.nav-item.active {
+  background-color: #eaeaea;
+}
+

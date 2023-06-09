@@ -26,10 +26,11 @@
   background-color: rgb(214, 201, 226);
   border-color: aqua;
   border: 1px solid aqua;
-  margin: auto;
+  margin-left: 480px;
   border-radius: 16px;
-  margin-top: 10px;
-}
+  margin-top: 160px;
+ }
+
 
 form {
   margin-left:38px;

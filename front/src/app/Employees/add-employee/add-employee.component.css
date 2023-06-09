@@ -1,11 +1,13 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
-.add-candidate-form {
+.add-employee-form {
  display: flex;
  justify-content: space-between;
+ margin-left: -600px;
+ 
 }
 
-.add-candidate-form label {
+.add-employee-form label {
  display: block;
  margin-top: 20px;
  width: 280px;
@@ -13,23 +15,26 @@
  
 }
 
-.add-candidate-form input[type="text"] {
+.add-employee-form input[type="text"] {
  width: 240px;
  height: 30px;
  border-radius: 6px;
  border: 1px solid rgb(138, 131, 131);
 }
 
-.add-candidate-form {
+.add-employee-form {
  width: 615px;
  height: 800px;
  background-color: rgb(214, 201, 226);
  border-color: aqua;
  border: 1px solid aqua;
- margin: auto;
+ margin-left: 480px;
  border-radius: 16px;
- margin-top: 10px;
+ margin-top: 160px;
 }
+
+
+
 
 form {
  margin-left:38px;
@@ -156,116 +161,3 @@ margin-left: 293px;
  margin-left: 293px;
 }  
 
-/* 
-.form-label {
- margin-top: 30px;
- color: aqua;
-
-}
-
-.custom-form-field {
- width: 300px;
- height: 50%;
-}
-
-.custom-form-field .mat-form-field-wrapper {
- height: 100%;
-}
-
-
-
-
-
-.example-form-field {
-   width: 200px;
- }
- 
- :host {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
- }
-
- .example-form{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-left: -235px;
-   max-width: 300px;
-   margin-top: 80px;
-   
- }
- #firstname {
- margin: auto;
- align-items: center;
- margin-left: 400px;
- }
-
- #lastname {
- margin: auto;
- align-items: center;
- margin-left: 650px;
- margin-top: -75px;
- }
-
- #age {
-   margin: auto;
-   align-items: center;
-   margin-left: 400px;
- }
-
- #email {
-   margin: auto;
-   align-items: center;
-   margin-left: 650px;
-   margin-top: -75px;
- }
-
- #department {
-   margin: auto;
-   align-items: center;
-   margin-left: 400px;
- }
-
- #designation {
-   margin: auto;
-   align-items: center;
-   margin-left: 650px;
-   margin-top: -75px;
- }
-
- #skills {
-   margin: auto;
-   align-items: center;
-   margin-left: 400px;
- }
-
- #salary {
-   margin: auto;
-   align-items: center;
-   margin-left: 650px;
-   margin-top: -75px;
- }
-
- #contact {
-   margin: auto;
-   align-items: center;
-   margin-left: 400px;
- 
- }
-
- #address {
-   margin: auto;
-   align-items: center;
-   margin-left: 650px;
-   margin-top: -75px;
- }
-
- #btn-submit {
-  margin-left: 620px;
-  height:50px ;
-  width: 150px;
-  margin-top: 15px;
- }  
-
-  */
