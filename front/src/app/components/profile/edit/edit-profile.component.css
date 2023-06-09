@@ -1,11 +1,13 @@
 .editer-box {
    width:90%;
    height:1000px;
+   margin-top: 20px;
 }
 
 .basic {
     margin-left: 280px;
     height:200px;
+    margin-top: 30px;
 }
 
 .card-holder {
@@ -28,7 +30,7 @@
     height:200px;
 }
 .first-name {
-    margin-left: -288px; 
+    margin-left: -268px; 
     margin-top: 60px;
 }
 .last-name{
