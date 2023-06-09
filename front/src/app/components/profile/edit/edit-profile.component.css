@@ -46,6 +46,12 @@
 .placeholder {
     margin-top: 20px;
 }
+.degree{
+    margin-top: 20px;
+}
+.period {
+    margin-top: 20px;
+}
 body{
     background-color: rgb(255, 255, 255);
     align-items:center;
