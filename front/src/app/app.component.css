@@ -130,6 +130,7 @@ h2{
   width: 280px;
   background-color: #242425;
   margin-top: -86px;
+  position: fixed;
 }
 
 .mat-drawer {
