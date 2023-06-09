@@ -35,7 +35,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { routes } from './app-routing.module';
 import { ProfileComponent } from '../app/components/profile/view-profile/profile.component';
 import { EditProfileComponent } from './components/profile/edit/edit-profile.component';
-import { HomeComponent } from './home/home/home.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
