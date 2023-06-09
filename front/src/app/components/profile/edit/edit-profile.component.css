@@ -5,27 +5,37 @@
 
 .basic {
     margin-left: 280px;
-    height:1000px;
+    height:200px;
 }
 
 .card-holder {
     margin-left: 280px;
-    height:1000px;
+    height:200px;
 }
 
 .contact {
     margin-left: 280px;
-    height:1000px;
+    height:200px;
 }
 
 .education{
     margin-left: 280px;
-    height:1000px;
+    height:200px;
 }
 
 .experience {
     margin-left: 280px; 
-    height:1000px;
+    height:200px;
+}
+.first-name {
+    margin-left: -288px; 
+    margin-top: 60px;
+}
+.last-name{
+    margin-left: 28px; 
+}
+.birth-date{
+    margin-left: 28px; 
 }
 
 body{
