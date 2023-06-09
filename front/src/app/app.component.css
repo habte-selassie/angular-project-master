@@ -10,24 +10,10 @@ body{
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #f2f2f2;
+  background-color: #fffafa;
   z-index: 999;
 }
 
-/* .navbar-content {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
-}
-
-.small-table {
-  margin-right: 20px;
-}
-
-.content {
-  margin-top: 60px; /* Height of the top navbar 
-} */
 
 
 nav{
@@ -41,7 +27,7 @@ nav{
     margin-left: 323px;
     background-color: #a5c531;
     height: 90px;
-    margin-top: -90px;
+    margin-top: -130px;
 }
 #b{
     width: 75%;
@@ -57,7 +43,7 @@ nav{
     margin-left: 323px;
     height: 600px;
     margin-top: 20px;
-    background-color: #b9b3b3;
+    background-color: #c0b7b7;
 }
 
 section {
@@ -100,7 +86,7 @@ section {
     width: 260px;
     height: 60px;
     color: #43c5c5;
-    background-color: #ca9999;
+    background-color: #fafafa;
     margin-top: 1px;
     border-color: #29c495;
 }
@@ -116,18 +102,23 @@ h1{
 }
 
 .image1-card {
-    width: 8%;
+    width: 21.8%;
     margin-left: 0px;
-    margin-top: -93px;
-    height: 93px;
+    margin-top: 0px;
+    height: 123px;
+    border: 1px solid blue;
+    border-left: #29c495;
+    border-right: #a5c531;
    
 }
 
 .image1 {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
-    background-color: #bd5f12;
+    height: 120px;
+    width: 300px;
+    background-color: #ffffff;
+    margin-top: 24px;
+    margin-left: -10px;
 }
 
 h2{
@@ -158,7 +149,7 @@ h2{
   width: 288px;
   background-color: #242425;
   position: fixed; /* Fix the position */
-  top: 80px; /* Position from the top */
+  top: 150px; /* Position from the top */
   left: 0; /* Position from the left */
 
 }
