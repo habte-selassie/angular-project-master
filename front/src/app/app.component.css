@@ -158,8 +158,9 @@ h2{
   width: 288px;
   background-color: #242425;
   position: fixed; /* Fix the position */
-  top: 99px; /* Position from the top */
+  top: 80px; /* Position from the top */
   left: 0; /* Position from the left */
+
 }
 
 
