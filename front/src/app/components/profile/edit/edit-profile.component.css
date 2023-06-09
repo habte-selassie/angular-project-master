@@ -1,7 +1,7 @@
 .editer-box {
    width:90%;
    height:1000px;
-   margin-top: 20px;
+   margin-top: 36px;
 }
 
 .basic {
@@ -29,17 +29,23 @@
     margin-left: 280px; 
     height:200px;
 }
+
 .first-name {
     margin-left: -268px; 
-    margin-top: 60px;
+    margin-top: 20px;
 }
+
 .last-name{
     margin-left: 28px; 
 }
+
 .birth-date{
     margin-left: 28px; 
 }
 
+.placeholder {
+    margin-top: 20px;
+}
 body{
     background-color: rgb(255, 255, 255);
     align-items:center;
