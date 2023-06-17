@@ -1,0 +1,6 @@
+# Redirect all requests to index.html
+/*    /index.html   200
+
+# Redirect specific routes
+/old-page    /new-page    301
+/blog/*      /new-blog/:splat    302
