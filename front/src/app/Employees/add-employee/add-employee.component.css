@@ -33,9 +33,6 @@
  margin-top: 126px;
 }
 
-
-
-
 form {
  margin-left:38px;
  margin-top: 150px;
@@ -75,10 +72,7 @@ h1{
  color: rgb(218, 205, 219);
  background-color: black;
  text-align: center; 
-
- 
 } 
-
 
 .btn-primary {
  width: 260px;
@@ -102,62 +96,10 @@ margin-top: -39px;
   margin-top: 2px; 
  }
 
-#b {
-
-}
-
-#c {
-
-}
-
-#d {
-
-}
-
-#e {
-
-}
-
-
 #f {
  margin-left: 293px;
  margin-top: -400px;
 }
-
-#f1 {
-margin-left: 293px;
+#f1,#g,#g1,#h,#h1,#i,#i1,#j,#j1 {
+  margin-left: 293px;
 }
-
-#g {
- margin-left: 293px;
-}
-
-#g1 {
- margin-left: 293px;
-}
-
-#h {
- margin-left: 293px;
-}
-
-#h1 {
- margin-left: 293px;
-}
-
-#i {
- margin-left: 293px;
-}
-
-#i1 {
- margin-left: 293px;
-}
-
-#j {
- margin-left: 293px;
-} 
-
-
-#j1 {
- margin-left: 293px;
-}  
-
