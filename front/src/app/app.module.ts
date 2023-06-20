@@ -43,6 +43,7 @@ import { CalanderComponent } from './components/calander/calander.component';
 import { HelpDeskComponent } from './components/help-desk/help-desk.component';
 import { HrDocumentsComponent } from './components/hr-documents/hr-documents.component';
 import { WeatherComponent } from './components/weather/weather.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { WeatherComponent } from './components/weather/weather.component';
     CalanderComponent,
     HelpDeskComponent,
     HrDocumentsComponent,
-    WeatherComponent
+    WeatherComponent,
+    AdminComponent
     
   ],
   imports: [
