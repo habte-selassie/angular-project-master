@@ -41,6 +41,7 @@ import { AttendanceComponent } from './components/attendance/attendance.componen
 import { RecruitmentComponent } from './components/recruitment/recruitment.component';
 import { CalanderComponent } from './components/calander/calander.component';
 import { HelpDeskComponent } from './components/help-desk/help-desk.component';
+import { HrDocumentsComponent } from './components/hr-documents/hr-documents.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { HelpDeskComponent } from './components/help-desk/help-desk.component';
     AttendanceComponent,
     RecruitmentComponent,
     CalanderComponent,
-    HelpDeskComponent
+    HelpDeskComponent,
+    HrDocumentsComponent
     
   ],
   imports: [
