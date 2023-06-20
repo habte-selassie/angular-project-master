@@ -39,6 +39,7 @@ import { HomeComponent } from './home/home.component';
 import { LeaveComponent } from './components/leave/leave.component';
 import { AttendanceComponent } from './components/attendance/attendance.component';
 import { RecruitmentComponent } from './components/recruitment/recruitment.component';
+import { CalanderComponent } from './components/calander/calander.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { RecruitmentComponent } from './components/recruitment/recruitment.compo
     HomeComponent,
     LeaveComponent,
     AttendanceComponent,
-    RecruitmentComponent
+    RecruitmentComponent,
+    CalanderComponent
     
   ],
   imports: [
