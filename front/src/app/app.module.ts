@@ -42,6 +42,7 @@ import { RecruitmentComponent } from './components/recruitment/recruitment.compo
 import { CalanderComponent } from './components/calander/calander.component';
 import { HelpDeskComponent } from './components/help-desk/help-desk.component';
 import { HrDocumentsComponent } from './components/hr-documents/hr-documents.component';
+import { WeatherComponent } from './components/weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { HrDocumentsComponent } from './components/hr-documents/hr-documents.com
     RecruitmentComponent,
     CalanderComponent,
     HelpDeskComponent,
-    HrDocumentsComponent
+    HrDocumentsComponent,
+    WeatherComponent
     
   ],
   imports: [
