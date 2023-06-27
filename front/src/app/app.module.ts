@@ -44,6 +44,7 @@ import { HelpDeskComponent } from './components/help-desk/help-desk.component';
 import { HrDocumentsComponent } from './components/hr-documents/hr-documents.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { WebsiteThemeComponent } from './components/profile/website-theme/website-theme.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { AdminComponent } from './components/admin/admin.component';
     HelpDeskComponent,
     HrDocumentsComponent,
     WeatherComponent,
-    AdminComponent
+    AdminComponent,
+    WebsiteThemeComponent
     
   ],
   imports: [
